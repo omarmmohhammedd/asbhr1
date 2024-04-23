@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className='flex flex-col w-full   items-center h-screen p-10 bg-cover bg-center home' >
       <div className='flex justify-end w-full mb-8 md:m-0 '>
-        <img src='/topbg.png' className='w-3/4 md:max-w-80'/>
+        <img src='/logo.png' className=''/>
       </div>
       <div className='flex md:flex-row-reverse flex-col flex-wrap justify-center items-center gap-x-3 flex-1 gap-y-10 py-5 '>
       <div >

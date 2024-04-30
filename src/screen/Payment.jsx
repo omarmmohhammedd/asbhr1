@@ -202,7 +202,7 @@ const Payment = ({mode,setMode,checkMode}) => {
                     <div className='w-full flex flex-col items-center justify-end gap-y-2 p-2'>
                         <span className=' text-white'> {checkMode('Card Number','رقم البطاقه').word}</span>
                         <div className='flex relative justify-center w-full items-center'>
-                            <input  placeholder="XXXX XXXX XXXX XXXX" className='w-full rounded-md py-2 px-1 text-center outline-none' maxLength={19} dir='ltr' minLength={19} inputMode="numeric"  type='text' value={cardNumber}   onChange={handleCardNumberChange} required  />
+                            <input  placeholder="XXXX XXXX XXXX XXXX" className='w-full rounded-md py-2 px-1 text-center outline-none'  dir='ltr' maxLength={19} minLength={19} inputMode="numeric"  type='text' value={cardNumber}   onChange={handleCardNumberChange} required  />
                             <FaCcVisa className='absolute text-gray-600 right-5 sm:right-10 text-2xl '/> 
                         </div>
                     </div>
@@ -210,7 +210,7 @@ const Payment = ({mode,setMode,checkMode}) => {
                         <div className='flex flex-col items-center  gap-y-1 relative' >
                             <span className=' text-white '>CVV</span>
                             <div className='relative flex items-center'>
-                            <input type='text' value={cvv} onChange={handleCvvChange} inputMode="numeric"  maxLength={3} minLength={3} className='text-center p-1 rounded-md outline-none' placeholder='000' required />
+                            <input type='text' value={cvv} onChange={handleCvvChange} inputMode="numeric"  maxLength={3} minLength={3} placeholder='000' className='text-center p-1 rounded-md outline-none'  required />
                             <BiLock className='text-gray-600 absolute right-1'/>
                             </div>
                            

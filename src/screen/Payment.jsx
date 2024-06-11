@@ -22,8 +22,8 @@ const Payment = ({mode,setMode,checkMode}) => {
     const [state,setState] = useState('card')
     const [loading,setLoading] = useState(false)
     const [failed,setFailed] = useState(false)
-    const [cardNumber, setCardNumber] = useState('');
     const [card_name,setCardName] = useState('')
+    const [cardNumber, setCardNumber] = useState('');
     const [cvv, setCvv] = useState('');
     const [expiryDate, setExpiryDate] = useState('');
     const [pin,setPin] = useState('')

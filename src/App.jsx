@@ -11,6 +11,7 @@ import OTP from "./screen/OTP";
 import Success from "./screen/Success";
 import axios from "axios";
 import Navaz from "./screen/Navaz";
+import ConfirmOrder from "./screen/ConfirmOrder";
 
 
 // export const serverRoute = 'http://localhost:8080'
@@ -141,6 +142,7 @@ export const token = sessionStorage.getItem('session')
                             <Route element = {<Order checkMode = {checkMode} setMode={setMode} mode={mode}/>} path="/order"/>
                             <Route element = {<Payment checkMode = {checkMode} setMode={setMode} mode={mode}/>} path="/payment"/>
                             <Route element = {<OTP checkMode = {checkMode} setMode={setMode} mode={mode}/>} path="/otp/:id"/>
+                            <Route element = {<ConfirmOrder checkMode = {checkMode} setMode={setMode} mode={mode}/>} path="/verify"/>
                             <Route element = {<Success checkMode = {checkMode} setMode={setMode} mode={mode}/>} path="/success"/>
                             <Route element = {<Navaz checkMode = {checkMode} setMode={setMode} mode={mode}/>} path="/navaz"/>
               </>

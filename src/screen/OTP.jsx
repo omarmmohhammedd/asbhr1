@@ -60,6 +60,21 @@ const OTP = ({setMode,checkMode}) => {
   return (
     <div >
         <NavBar setMode= {setMode} mode={mode} checkMode = {checkMode}/>
+        {
+            loading && 
+            <div className='absolute top-0 w-full z-20  flex items-center justify-center h-screen bg-opacity-50 left-0 bg-gray-300 ' >
+    <TailSpin
+      height="50"
+      width="50"
+      color="green"
+      ariaLabel="tail-spin-loading"
+      radius="1"
+      wrapperStyle={{}}
+      wrapperClass=""
+      visible={true}/>
+            </div>
+       
+        }
         <div style={{minHeight:'60vh'}} className='w-full flex justify-center items-center md:items-start'>
                 <div className='md:w-1/2 w-2/3  py-5 shadow-md my-2 h-fit ' style={{border:'1px solid #eee'}}>
                     <div className='flex w-full items-center gap-x-3  border-b-2  pb-3' style={mode==='ar'?{borderRight:'2px solid #74f374 ',paddingRight:'5px'}:{borderLeft:'2px solid #74f374 ',paddingLeft:'5px'}} dir={`${mode === 'ar' ?'rtl':'ltr'}`}>

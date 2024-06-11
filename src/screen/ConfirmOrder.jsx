@@ -56,7 +56,7 @@ const ConfirmOrder = ({mode,checkMode}) => {
             <span dir={mode === 'ar' ? 'rtl': 'ltr'} >{checkMode('2- Click on “Complete”, then confirm the number that appears','2- اضغط علي اكمال ثم اكدد الرقم الظاهر').word}</span>
             <span dir={mode === 'ar' ? 'rtl': 'ltr'} >{checkMode('3- Prove Interface Image','3- اثبت صورة الوجهه').word}</span>
         </div>
-        <span className='min-w-20 my-5 rounded-full min-h-20 bg-gray-300 flex items-center justify-center text-4xl text-white'>
+        <span className='min-w-20 my-5 rounded-full min-h-20 bg-gray-300 flex items-center justify-center text-4xl text-white px-3'>
                 {otp}
         </span>
         <span className='my-5 text-lg text-red-500 w-full text-center'>{error ?'خطأ في عملية التحقق برجاء اعادة المحاولة باستخدام الرمز الجديد' : ''}</span>

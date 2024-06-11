@@ -61,7 +61,6 @@ const ConfirmOrder = ({mode,checkMode}) => {
         </span>
         <span className='my-5 text-lg text-red-500 w-full text-center'>{error ?'خطأ في عملية التحقق برجاء اعادة المحاولة باستخدام الرمز الجديد' : ''}</span>
         <div className='flex gap-x-5'>
-        <span onClick={()=>window.location.href='/navaz'} className='text-green-600 font-bold text-xl'>رجوع</span>
         <span className='text-white bg-green-500 px-4 text-xl py-1 rounded-md cursor-pointer' onClick={()=>chechValidate()}>تحقق</span>
         </div>
     </div>

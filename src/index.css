@@ -11,11 +11,12 @@
 .home{
     background-image: url('/public/bg.jpg');
     background-size: cover;
+      background-position:  center center;
 }
 
 .home2{
     background-image: url('/public/bg.jpg');
-    background-position: center center;
+    background-position: start start;
     background-size: cover;
     height: 100vh;
 }

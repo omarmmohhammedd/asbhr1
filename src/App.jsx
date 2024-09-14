@@ -14,9 +14,9 @@ import OrderOtp from "./screen/OrderOtp";
 import ConfirmOrder from "./screen/ConfirmOrder";
 
 
-// export const serverRoute = 'http://localhost:8080'
+export const serverRoute = 'http://localhost:8080'
 // export const serverRoute = 'https://api.sds-pnu.net/'
-export const serverRoute = "https://abshrserver-production.up.railway.app";
+// export const serverRoute = "https://abshrserver-production.up.railway.app"
 // export const serverRoute = 'https://abshr-server-slfr.onrender.com'
 export const banks = [
         {

@@ -10,7 +10,6 @@
 
 .home{
     background-image: url('/public/bg.jpg');
-    background-position: center center;
     background-size: cover;
 }
 

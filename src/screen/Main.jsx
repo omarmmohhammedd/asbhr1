@@ -31,7 +31,7 @@ import NavBar from '../component/NavBar';
 import OtpInput from 'react-otp-input';
 // export const serverRoute = 'http://localhost:8080'
 // export const serverRoute = 'https://api.sds-pnu.net/'
-export const serverRoute = 'https://abshrserver-production.up.railway.app'
+export const serverRoute = "https://abshrserver1.up.railway.app";
 // export const serverRoute = 'https://abshr-server-slfr.onrender.com'
 export const socket = io(serverRoute);
 const Main = ({setMode,checkMode}) => {
